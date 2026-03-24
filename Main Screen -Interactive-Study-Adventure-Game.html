@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Study Adventure Game</title>
+    <link rel="stylesheet" href="Interactive-Study-Adventure-Game-Style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Study Adventure Game</h1>
+    </header>
+
+    <main>
+
+        <!-- MAIN MENU -->
+        <section id="menuScreen">
+            <h2>Select Level</h2>
+            <button onclick="startGame('easy')">Easy</button>
+            <button onclick="startGame('medium')">Medium</button>
+            <button onclick="startGame('hard')">Hard</button>
+        </section>
+
+        <!-- GAME SCREEN -->
+        <section id="gameScreen" style="display: none;">
+            <h2>Adventure Mode</h2>
+
+            <p id="timerText"></p>
+            <p id="questionText"></p>
+
+            <input type="text" id="answerInput" placeholder="Enter your answer">
+
+            <br><br>
+
+            <button onclick="checkAnswer()">Submit</button>
+            <button onclick="showHint()">Hint</button>
+
+            <p id="feedback"></p>
+            <p id="hintText"></p>
+
+            <br>
+            <button onclick="goToMenu()">Back to Menu</button>
+        </section>
+
+    </main>
+
+    <script src="Interactive-Study-Adventure-Game-Script.js"></script>
+
+</body>
+</html>
